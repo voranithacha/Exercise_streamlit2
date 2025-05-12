@@ -1,10 +1,14 @@
 import streamlit as st
 import pandas as pd
 import duckdb as db
+import os
 
 st.write("## Starbucks Dataset :coffee::mermaid:")
 
-df = pd.read_csv("./pages/Starbucks.csv")
+file_path = './data/Starbucks.csv'
+df = pd.read_csv(file_path)
+#df = pd.read_csv("Starbucks.csv")
+
 st.write(df)
 
 
